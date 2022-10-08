@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.navbar-container{
+    background-color:#eb4034;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin: 0;
+}
+
+.top-name{
+    font-size: 45px;
+}
+
+
+.left-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #eb4034;
+    margin: 0;
+
+}
+
+.left-navbar a{
+    text-decoration:none;
+    color:white;
+}
+
+.left-navbar a:hover{
+    color: black;
+}
+
+.about{
+    padding: 20px;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(241, 241, 89);
+
+    
+}
+
+.about p{
+    font-size: 30px;
+}
+
+.about h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.hobbies{
+    font-size: 17px;
+     padding: 20px;
+     background-color: rgb(173, 247, 247);
+}
+
+.hobbies h1{
+    display:flex;
+    justify-content: center;
+
+}
+
+.hobbies p{
+    font-size: 30px
+}
+
+.personal-links{
+    padding: 20px;
+    margin:0;
+    width: 100%;
+    height: 40vh;
+    background-color: #eb4034;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.personal-links a{
+    padding: 5px;
+}
+
+#personal-link-header{
+    padding-bottom: 10px;
+}
+
+#piazza,#github,#linkedin,#twitter {
+    text-decoration: none;
+    width:50px;
+    height: 70px;
+    background-color: #eb4034;
+    color:white;
+    padding: 5px;
+    margin:10px
+}
+
+
+.lists-style {
+    padding: 10px;
+
+    background-color: rgb(27, 26, 26);
+    color: aliceblue;
+
+}
+.lists-style li{
+    padding: 5px;
+    list-style: none;
+}
+
+
+.fav-quote{
+    color:#e4f1f0;
+    padding: 10px;
+
+
+}
+
+#quote{
+    background-color: rgb(147, 243, 243);
+}
+
+#quote p{
+    font-size: 25px;
+    padding: 30px;
+}
+
+.image-section-container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-section img{
+    padding: 20px;
+}
+.image-section h1{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    padding: 10px;
+    background-color: #eb4034;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5%;
+}
+
+button:hover{
+    color:black;
+}
+
+.table-style{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    background-color:white;
+   
+
+}
+
+.table-style td,tr,th{
+    padding: 10px;
+    background: rgb(115, 218, 236);
+ 
+    
+}
+
+#cls-sch{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+footer{
+    background-color: rgb(160, 224, 240);
+    padding: 5px;
+    color:white;
+}
