@@ -22,7 +22,7 @@
 }
 
 .left-navbar {
-  flex: 2;
+  flex: 1;
   display: flex;
   justify-content: space-around;
 }
@@ -30,6 +30,7 @@
 .left-navbar a {
   text-decoration: none;
   color: white;
+  font-size: 15px;
 }
 
 .left-navbar a:hover {
