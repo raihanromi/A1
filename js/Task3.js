@@ -43,8 +43,8 @@ const stripBlank = () => {
   let input_value = document.getElementById("magic-input").value;
   let magicArray = input_value.split("\n");
   let newmagicinput = "";
-  magicArray.forEach((magicline) => {
-    if (magicline === "") {
+  magicArray.forEach((line) => {
+    if (line === "") {
       return;
     }
     newmagicinput += magicline.trim() + "\n";
