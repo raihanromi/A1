@@ -16,9 +16,9 @@ random_value=Math.floor(Math.random()*quotes.length);
 console.log(random_value)
 document.getElementById("quote").innerHTML=quotes[random_value];
 document.getElementById("quotes").style.backgroundColor = "#aebab1";
-document.getElementById("quote_text").style.color = "#fff";
-document.getElementById("quote_text").style.fontFamily = "Amiri";
-document.getElementById("quote_text").style.fontWeight = "serif"; 
+document.getElementById("quote").style.color = "#fff";
+document.getElementById("quote").style.fontFamily = "Amiri";
+document.getElementById("quote").style.fontWeight = "serif"; 
 
 function red() {
   console.log("Clicked Red");
