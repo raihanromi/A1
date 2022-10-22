@@ -41,27 +41,24 @@
         border-color: black;
       }
 
-      .quotebutton{
+      .quotebutton {
         margin-top: 10px;
         display: flex;
         justify-content: center;
       }
 
-      .heroconverter-title{
+      .heroconverter-title {
         display: flex;
         justify-content: center;
-
       }
 
-      .hero_converter{
+      .hero_converter {
         display: flex;
         justify-content: center;
-
       }
     </style>
   </head>
   <body>
-
     <!--Quote box-->
     <div class="sectiontitle">
       <h3 id="quote-title">Quote Box</h3>
@@ -71,36 +68,36 @@
     </div>
 
     <div class="quotebutton">
-      <button onclick="red()" type="button" id="red-button">Red</button>
-      <button onclick="blue()" type="button" id="blue-button">blue</button>
-      <button onclick="yellow()" type="button" id="yellow-button">
+      <button onclick="redColor()" type="button" id="red-button">Red</button>
+      <button onclick="blueColor()" type="button" id="blue-button">blue</button>
+      <button onclick="yellowColor()" type="button" id="yellow-button">
         yellow
       </button>
-      <button onclick="pink()" type="button" id="pink-button">pink</button>
+      <button onclick="pinkColor()" type="button" id="pink-button">pink</button>
     </div>
 
-    <hr>
+    <hr />
 
+    <!--Hero Converter-->
+    <div class="heroconverter-title">
+      <h3>Hero Converter</h3>
+    </div>
 
-<!--Hero Converter-->
-<div class="heroconverter-title">
-    <h3>Hero Converter</h3>
-</div>
-    
     <div class="section_container">
-        <div class="hero_converter">
-            <span class="hero_converter_text">Convert: </span><input id="converter_input" type="number">
-            <select name="unit" id="converter_unit">
-                <option value="lbtokg">LB to KG</option>
-                <option value="kgtolb">KG to LB</option>
-            </select>
-            <button onclick="convert()" type="button" id="converter_button">Go</button>
-            <span id="converter_result"></span>
-        </div>
+      <div class="hero_converter">
+        <span class="hero_converter_text">Convert: </span
+        ><input id="converter_input" type="number" />
+        <select name="unit" id="converter_unit">
+          <option value="lbtokg">lb to kg</option>
+          <option value="kgtolb">kg to lb</option>
+        </select>
+        <button onclick="converter()" type="button" id="converter_button">
+          Go
+        </button>
+        <span id="converter_result"></span>
+      </div>
     </div>
-
 
     <script src="../js/Task1.js"></script>
-
   </body>
 </html>

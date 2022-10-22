@@ -12,12 +12,14 @@ let quotes = [
 random_value = Math.floor(Math.random() * quotes.length);
 console.log(random_value);
 document.getElementById("quote").innerHTML = quotes[random_value];
-document.getElementById("quotes").style.backgroundColor = "#aebab1";
+document.getElementById("quotes").style.backgroundColor = "pink";
+document.getElementById("quotes").style.border= "5px";
+document.getElementById("quotes").style.borderColor= "black";
 document.getElementById("quote").style.color = "#fff";
 document.getElementById("quote").style.fontFamily = "Amiri";
 document.getElementById("quote").style.fontWeight = "serif";
 
-function red() {
+function redColor() {
   console.log("Clicked Red");
   document.getElementById("quotes").style.backgroundColor = "red";
   document.getElementById("quote").style.color = "black";
@@ -28,7 +30,7 @@ function red() {
   document.getElementById("quotes").style.width = "200px";
 }
 
-function blue() {
+function blueColor() {
   console.log("Clicked Blue");
   document.getElementById("quotes").style.backgroundColor = "blue";
   document.getElementById("quote").style.color = "white";
@@ -39,7 +41,7 @@ function blue() {
   document.getElementById("quotes").style.width = "300px";
 }
 
-function yellow() {
+function yellowColor() {
   console.log("Clicked Blue");
   document.getElementById("quotes").style.backgroundColor = "yellow";
   document.getElementById("quote").style.color = "red";
@@ -50,7 +52,7 @@ function yellow() {
   document.getElementById("quotes").style.width = "500px";
 }
 
-function pink() {
+function pinkColor() {
   console.log("Clicked Blue");
   document.getElementById("quotes").style.backgroundColor = "pink";
   document.getElementById("quote").style.color = "yellow";
@@ -59,4 +61,18 @@ function pink() {
   random_value = Math.floor(Math.random() * quotes.length);
   document.getElementById("quote").innerHTML = quotes[random_value];
   document.getElementById("quotes").style.width = "400px";
+}
+
+function converter(){
+    var input = document.getElementById("converter_input").value;
+    var unit = document.getElementById("converter_unit").value;
+     console.log(unit);
+
+    if (unit == "lbtokg") {
+      var output = input * 0.45359;
+      document.getElementById("converter_result").innerHTML = output + " KG";
+    } else {
+      var output = input * 2.20462;
+      document.getElementById("converter_result").innerHTML = output + " LB";
+    }
 }
