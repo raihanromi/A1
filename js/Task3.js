@@ -53,3 +53,35 @@ const stripBlank = () => {
 };
 
 
+function addLineNo() {
+  var magicinput = document.getElementById("magic-input").value;
+  var magicArray = magicinput.split("\n");
+  var newmagicinput = "";
+  for (var i = 0; i < magicArray.length; i++) {
+    if (i == magicArray.length - 1) {
+      newmagicinput += i + 1 + ") " + magicArray[i];
+    } else {
+      newmagicinput += i + 1 + ") " + magicArray[i] + "\n";
+    }
+  }
+  document.getElementById("magic-input").value = newmagicinput;
+  console.log("Added Line Numbers!");
+}
+function shuffleLines() {
+  var magicinput = document.getElementById("magic-input").value;
+  var magicArray = magicinput.split("\n");
+  var newmagicinput = "";
+  magicArray.sort(function (a, b) {
+    return 0.5 - Math.random();
+  });
+  for (var i = 0; i < magicArray.length; i++) {
+    if (i == magicArray.length - 1) {
+      newmagicinput += magicArray[i];
+    } else {
+      newmagicinput += magicArray[i] + "\n";
+    }
+  }
+  document.getElementById("magic-input").value = newmagicinput;
+  console.log("Shuffled Lines!");
+}
+
