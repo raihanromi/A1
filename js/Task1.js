@@ -20,6 +20,7 @@ document.getElementById("quote").style.color = "#fff";
 document.getElementById("quote").style.fontFamily = "Amiri";
 document.getElementById("quote").style.fontWeight = "serif"; 
 
+
 function red() {
   console.log("Clicked Red");
   document.getElementById("quotes").style.backgroundColor = "red";
