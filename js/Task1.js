@@ -1,5 +1,4 @@
 let quotes = [
-
   "The purpose of our lives is to be happy",
   "Life is what happens when you're busy making other plans",
   "Get busy living or get busy dying",
@@ -8,18 +7,15 @@ let quotes = [
   "If you want to live a happy life, tie it to a goal, not to people or things.",
   "Never let the fear of striking out keep you from playing the game.",
   "In order to write about life first you must live it",
-
 ];
 
-
-random_value=Math.floor(Math.random()*quotes.length);
-console.log(random_value)
-document.getElementById("quote").innerHTML=quotes[random_value];
+random_value = Math.floor(Math.random() * quotes.length);
+console.log(random_value);
+document.getElementById("quote").innerHTML = quotes[random_value];
 document.getElementById("quotes").style.backgroundColor = "#aebab1";
 document.getElementById("quote").style.color = "#fff";
 document.getElementById("quote").style.fontFamily = "Amiri";
-document.getElementById("quote").style.fontWeight = "serif"; 
-
+document.getElementById("quote").style.fontWeight = "serif";
 
 function red() {
   console.log("Clicked Red");
@@ -29,7 +25,7 @@ function red() {
   document.getElementById("quote").style.fontWeight = "500";
   random_value = Math.floor(Math.random() * quotes.length);
   document.getElementById("quote").innerHTML = quotes[random_value];
-   document.getElementById("quotes").style.width="200px";
+  document.getElementById("quotes").style.width = "200px";
 }
 
 function blue() {
@@ -40,9 +36,8 @@ function blue() {
   document.getElementById("quote").style.fontWeight = "400";
   random_value = Math.floor(Math.random() * quotes.length);
   document.getElementById("quote").innerHTML = quotes[random_value];
-   document.getElementById("quotes").style.width = "300px";
+  document.getElementById("quotes").style.width = "300px";
 }
-
 
 function yellow() {
   console.log("Clicked Blue");
@@ -52,7 +47,7 @@ function yellow() {
   document.getElementById("quote").style.fontWeight = "600";
   random_value = Math.floor(Math.random() * quotes.length);
   document.getElementById("quote").innerHTML = quotes[random_value];
-   document.getElementById("quotes").style.width = "500px";
+  document.getElementById("quotes").style.width = "500px";
 }
 
 function pink() {
@@ -61,7 +56,7 @@ function pink() {
   document.getElementById("quote").style.color = "yellow";
   document.getElementById("quote").style.fontFamily = "Ubuntu";
   document.getElementById("quote").style.fontWeight = "700";
-  random_value = Math.floor(Math.random()* quotes.length);
+  random_value = Math.floor(Math.random() * quotes.length);
   document.getElementById("quote").innerHTML = quotes[random_value];
-   document.getElementById("quotes").style.width = "400px";
+  document.getElementById("quotes").style.width = "400px";
 }
