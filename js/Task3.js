@@ -53,11 +53,11 @@ const stripBlank = () => {
 };
 
 
-function addLineNo() {
-  var magicinput = document.getElementById("magic-input").value;
-  var magicArray = magicinput.split("\n");
-  var newmagicinput = "";
-  for (var i = 0; i < magicArray.length; i++) {
+const addLineNo=() => {
+  let magicinput = document.getElementById("magic-input").value;
+  let magicArray = magicinput.split("\n");
+  let newmagicinput = "";
+  for (let i = 0; i < magicArray.length; i++) {
     if (i == magicArray.length - 1) {
       newmagicinput += i + 1 + ") " + magicArray[i];
     } else {
@@ -65,16 +65,15 @@ function addLineNo() {
     }
   }
   document.getElementById("magic-input").value = newmagicinput;
-  console.log("Added Line Numbers!");
 }
-function shuffleLines() {
-  var magicinput = document.getElementById("magic-input").value;
-  var magicArray = magicinput.split("\n");
-  var newmagicinput = "";
+const shuffleLines =() =>{
+  let magicinput = document.getElementById("magic-input").value;
+  let magicArray = magicinput.split("\n");
+  let newmagicinput = "";
   magicArray.sort(function (a, b) {
     return 0.5 - Math.random();
   });
-  for (var i = 0; i < magicArray.length; i++) {
+  for (let i = 0; i < magicArray.length; i++) {
     if (i == magicArray.length - 1) {
       newmagicinput += magicArray[i];
     } else {
@@ -82,6 +81,5 @@ function shuffleLines() {
     }
   }
   document.getElementById("magic-input").value = newmagicinput;
-  console.log("Shuffled Lines!");
 }
 
