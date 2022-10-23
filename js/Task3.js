@@ -12,6 +12,7 @@ const sortLines = () => {
   let magicArray = input_value.split("\n");
   let newmagicinput = "";
   magicArray.sort();
+  console.log( magicArray)
   for (let i = 0; i < magicArray.length; i++) {
     if (i == magicArray.length - 1) {
       newmagicinput += magicArray[i];
