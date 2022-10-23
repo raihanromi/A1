@@ -4,7 +4,7 @@ const cleartext = () => {
 
 const capitalize = () => {
   let input_value = document.getElementById("magic-input").value;
-  new_input_value=input_value.toUpperCase()
+  let new_input_value=input_value.toUpperCase()
   console.log(new_input_value)
   if (input_value===new_input_value){
     document.getElementById("magic-input").value=input_value.toLowerCase()
