@@ -10,7 +10,6 @@
 }
 
 .navbar-container {
-  /* background-color: #eb4034; */
   color: black;
   display: flex;
   justify-content: space-between;
@@ -40,7 +39,6 @@
 }
 
 /* About me section*/
-
 .about {
   height: 100vh;
   display: flex;
@@ -191,7 +189,7 @@ th {
 }
 
 footer {
-  background-color: rgb(160, 224, 240);
+  background-color: rgb(136, 139, 139);
   padding: 5px;
   color: white;
 }
