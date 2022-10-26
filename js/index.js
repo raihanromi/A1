@@ -10,3 +10,8 @@ navLinks.forEach((link) => {
     document.body.classList.remove("nav-open");
   });
 });
+
+  let modifiedText = document.getElementById("modify");
+      let latestDate = new Date(document.lastModified);
+      let pageLocation = window.location.href;
+      modifiedText.innerHTML = `Last Updated : ${latestDate} and current page location : ${pageLocation}`;
