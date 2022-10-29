@@ -2,108 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Raihan Portfolio website</title>
+    <link rel="stylesheet" href="css/style1.css">
     <link
-      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-
-    <title>Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;900&family=Source+Sans+Pro:wght@200;300;400;600;900&display=swap" rel="stylesheet">
   </head>
-
   <body>
-    <!-- navbar start-->
-    <div class="navbar-container">
-      <h1 class="top-name">Raihan Romeo</h1>
-      <div class="left-navbar">
-      <a href="#"><h2>Contact</h2></a>
-      <a href="./pages/projects.html"><h2>Projects</h2></a>
-      <a href="#quote"><h2>Favourite quote</h2></a>
-      <a href="newpage.html"><h2>Newpage</h2></a>
-    </div>
-    </div>
-    <!-- navbar section end-->
- 
-    
-    <!--About me section start-->
-    <div class="about">
-        <div class="aboutme-img">
-           <img src="./images/movieposter1.jpg" width="300px">
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt=""/>
       </div>
-      <div class="aboutme-info">
-      <h1>ABOUT ME</h1>
-      <p>
-        I am <span id="name">Raihan Romeo</span> from Dhaka,Bangladesh.<br />I am currently an
+      <nav class="nav nav__list">
+          <a href="#home" class="nav__link">Home</a>
+            <a href="#services" class="nav__link">My Hobbies</a>
+            <a href="#about" class="nav__link">About me</a>
+            <a href="pages/projects.html" class="nav__link">My Projects</a>
+         <a href="#" class="nav__link">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        HI,I am <strong>Raihan Romeo</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Student/Front-end dev
+      </p>
+      <img src="images/myimg.jpg" alt="" class="intro__img" />
+    </section>
+
+    <!-- MY services-->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">My Hobbies</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Playing video games</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, recusandae ipsam esse labore earum reprehenderit non nesciunt laboriosam praesentium hic, veniam deserunt repellat maxime velit totam vitae sed est eveniet.</p>
+        </div>
+        <div class="service">
+          <h3>watching movies</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique modi facilis facere dolore qui, eaque, perferendis commodi ipsum sapiente inventore nihil? Non sit iure laudantium modi hic voluptates cumque voluptatem.</p>
+        </div>
+        <div class="service">
+          <h3>Creating sketch</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur laboriosam sapiente ut nesciunt eum dolorum quidem nam recusandae enim commodi vero dicta, deleniti amet suscipit inventore nostrum blanditiis in corrupti.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About me-->
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Studying CSE at Bracu university</p>
+           
+           <div class="about-me__body">
+               <p>I am Raihan Romeo from Dhaka,Bangladesh.I am currently an
         undergraduate student studying Computer Science and Engineering at
         <a href="https://www.bracu.ac.bd/" target="_blank">Brac university</a
-        >.<br />
-        My goal is to become a full stack developer.
-      </p>
-    </div>
-    </div>
+        ></p>
+               <p>My goal is to become a full stack developer.
+                My favourite quote is-<i><b>"The way to get started is to quit talking and begin doing".</b></i> 
+               </p>
+           </div>
+           
+           <img src="images/myimg.jpg" alt="" class="about-me__img">
+        </section>
 
-    <!--About me section end-->
-
-    <!-- Hobbies section start-->
-    <div class="hobbies">
-      <h1>Hobbies</h1>
-      <p>Playing video games,watching movies.</p>
-      <p>Playing football and badminton.</p>
-    </div>
-    <!-- Hobbies section end-->
-
-    <!-- personal links section start-->
-    <div class="personal-links">
-      <h1 id="personal-link-header">Personal links</h1>
-      <a
-        href="https://piazza.com/class/l8fcwp0qxsv615"
-        target="_blank"
-        id="piazza"
-        >Piazza</a
-      >
-      <a href="https://github.com/raihanromi" target="_blank" id="github"
-        >Github</a
-      >
-      <a href="https://bd.linkedin.com/" target="_blank" id="linkedin"
-        >Linkedin</a
-      >
-      <a href="https://twitter.com/" target="_blank" id="twitter">Twitter</a>
-    </div>
-    <!-- personal links section start-->
-
-    <div class="lists-style">
-      <h3 style="color: #ee842d">Programming Language :</h3>
-      <ol>
-        <li>Python</li>
-        <li>Javascript</li>
-        <li>Php</li>
-      </ol>
-      <h3 style="color: #ee842d">Framework/Tools :</h3>
-      <ol type="1">
-        <li>React</li>
-        <li>Mysql,Mongobd</li>
-        <li>Nodesjs,Expressjs</li>
-        <li>Figma,Github,git</li>
-      </ol>
-    </div>
-
-    <div id="quote">
-      <h1 class="fav-quote">MY favourite quote:</h1>
-      <p>
-        "A friend should always underestimate your virtues and an enemy
-        overestimate your faults."<br />
-        <span
-          ><b><i>-Don Vito Corleone,The Godfather</i></b></span
-        >
-      </p>
-    </div>
-
-    <!--table part start-->
-    <h1 id="cls-sch">MY class schedule</h1>
+    <!-- My work-->
+    <section class="my-work" id="work">
+      <h2 class="section__title">My Project</h2>
+      <div class="portfolio">
+        <a href="pages/task1.html" class="portfolio__item">
+          <img src="images/project1.JPG" alt="" class="portfolio__img" />
+        </a>
+        <a href="pages/task2.html" class="portfolio__item">
+          <img src="images/project2.JPG" alt="" class="portfolio__img" />
+        </a>
+        <a href="pages/task3.html" class="portfolio__item">
+          <img src="images/project3.JPG" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+    <!--Table section-->
+    <section>
+         <h1 id="cls-sch">MY class schedule</h1>
     <div class="table-style">
       <table>
         <tr>
@@ -150,48 +143,40 @@
       </table>
     </div>
 
-    <!-- image section start-->
-    <div class="image-section">
-      <h1>Favourite movie poster:</h1>
-      <div class="image-section-container">
-        <img
-          src="./images/movieposter1.jpg"
-          alt="jusrassic park movie poster"
-          width="300"
-          height="400"
-        />
-        <img src="./images/movieposter2.webp" alt="" width="300" height="400" />
-      </div>
-    </div>
-    <!-- image section start-->
-
-    <!--table part end-->
-
+    </section>
+    <!-- Footer-->
     <footer>
-    <div class="personal-links">
-      <h1 id="personal-link-header">Personal links</h1>
-      <a
-        href="https://piazza.com/class/l8fcwp0qxsv615"
-        target="_blank"
-        id="piazza"
-        >Piazza</a
-      >
-      <a href="https://github.com/raihanromi" target="_blank" id="github"
-        >Github</a
-      >
-      <a href="https://bd.linkedin.com/" target="_blank" id="linkedin"
-        >Linkedin</a
-      >
-      <a href="https://twitter.com/" target="_blank" id="twitter">Twitter</a>
-    </div>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://github.com/raihanromi" class="social-list__link"
+            ><i class="fa-brands fa-github"></i></a
+          >
+        </li>
+        <li class="social-list__item">
+          <a href="https://bd.linkedin.com/" class="social-list__link"
+            ><i class="fa-brands fa-linkedin"></i></a
+          >
+        </li>
+        <li class="social-list__item">
+          <a href="https://twitter.com/" class="social-list__link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://piazza.com/class/l8fcwp0qxsv615"
+            class="social-list__link"
+            ><i class="fa-solid fa-p"></i></a
+          >
+        </li>
+      </ul>
       <h4 id="modify">.</h4>
     </footer>
-
     <script>
-      let modifiedText = document.getElementById("modify");
+       let modifiedText = document.getElementById("modify");
       let latestDate = new Date(document.lastModified);
       let pageLocation = window.location.href;
       modifiedText.innerHTML = `Last Updated : ${latestDate} and current page location : ${pageLocation}`;
     </script>
+    <script src="js/index.js"></script>
+
   </body>
 </html>
