@@ -338,6 +338,8 @@ header {
 
 /* My Work */
 
+/* need to update the css */
+
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -371,6 +373,8 @@ header {
     opacity: .5;
 }
 
+
+/*--------------------------------------*/
 
 .table-style {
   margin-bottom: 30px;
