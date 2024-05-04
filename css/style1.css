@@ -440,6 +440,7 @@ th {
 
 .social-list__item {
     margin: 0 .5em;
+    padding: 1rem;
 }
 
 .social-list__link {
