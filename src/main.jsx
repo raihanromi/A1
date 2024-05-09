@@ -11,19 +11,19 @@ import Project from "./pages/Projects/Project.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/portfolio_react/",
+    path: "/Portfolio/",
     element: <App />,
     children: [
       {
-        path: "/portfolio_react/",
+        path: "/Portfolio/",
         element: <About />,
       },
       {
-        path: "/portfolio_react/resume",
+        path: "/Portfolio/resume",
         element: <Resume />,
       },
       {
-        path: "/portfolio_react/project",
+        path: "/Portfolio/project",
         element: <Project />,
       },
     ],
