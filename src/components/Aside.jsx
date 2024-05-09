@@ -14,7 +14,7 @@ const Aside = () => {
     <aside className="sidebar">
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img src="/portfolio_react/images/mypic.jpg" alt="portfolio picture" width="80" />
+          <img src="/Portfolio/images/mypic.jpg" alt="portfolio picture" width="80" />
         </figure>
 
         <div className="info-content">

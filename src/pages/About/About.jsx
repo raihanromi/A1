@@ -2,7 +2,7 @@ import Service from "./Service";
 
 const servicesData = [
   {
-    icon: "/portfolio_react/images/icon-dev.svg",
+    icon: "/Portfolio/images/icon-dev.svg",
     title: "Web development",
     description: "High-quality development of sites at the professional level.",
   },
